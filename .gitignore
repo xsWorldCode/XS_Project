@@ -1,0 +1,24 @@
+# 忽略 Python 缓存
+__pycache__/
+*.pyc
+
+# 忽略虚拟环境
+.conda/
+.venv/
+
+# 忽略数据集（通常太大，不建议传 GitHub）
+DataSets/
+
+# 忽略模型权重文件（超过 100MB 会报错）
+*.pt
+*.pth
+*.engine
+*.onnx
+checkpoints/
+
+# 忽略训练日志和结果图
+runs/
+test_results/
+val_results/
+*.png
+*.json
